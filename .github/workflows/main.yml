@@ -17,8 +17,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'temurin'  # Specify the Java distribution (e.g., temurin or adoptopenjdk)
+          distribution: 'temurin'
 
       - name: Build with Maven
         run: mvn clean install
-  working-directory: ./DemoMay
+        working-directory: ./demomay  # Add this to specify the correct directory
